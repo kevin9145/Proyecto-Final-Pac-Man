@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .wall {
+    background-color: #0033cc;
+    border: 2px solid #001a66;
+  }
+  
+  .dot {
+    background-color: black;
+    position: relative;
+  }
+  
+  .dot::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 6px;
+    height: 6px;
+    background: yellow;
+    border-radius: 50%;
+  }
+  
+  .power-pellet {
+    background-color: black;
+    position: relative;
+  }
+  
+  .power-pellet::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+  }
+  
+  .pacman {
+    background-image: url(pacman.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .red {
+    background-image: url(red.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .pink {
+    background-image: url(pink.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .scared {
+    background-color: blue !important;
+    background-image: url(azul.jpeg);
+  }
+  
+  #restart {
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #restart:hover {
+    background-color: gold;
+  }
+  
+  #lives {
+  color: yellow;
+  font-weight: bold;
+}
